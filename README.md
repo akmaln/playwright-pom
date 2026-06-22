@@ -40,7 +40,8 @@ A UI automation suite built with **Python + Playwright** and **PyTest**, structu
 | **Checkboxes** | `/checkboxes` | Positional locators (`nth`), `.check()` / `.is_checked()` |
 | **Dropdown** | `/dropdown` | `.select_option()`, parametrized scenarios, label-vs-value assertions |
 | **Dynamic Controls** | `/dynamic_controls` | Auto-waiting through async DOM changes, `.fill()` waiting for an editable field |
-| **Homepage** | `/` | Smoke test — page load and heading visibility |
+
+*** A standalone homepage smoke test (`test_homepage.py`) verifies the site loads and the main heading renders.
 
 ## Project Structure
 

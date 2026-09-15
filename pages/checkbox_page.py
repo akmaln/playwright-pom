@@ -9,7 +9,7 @@ class CheckboxPage:
         self.page.goto("https://the-internet.herokuapp.com/checkboxes")
 
     def checkbox(self, number):
-        return self.page.get_by_role("checkbox").nth(number - 1)
+        return self.page.locator("#checkboxes").get_by_role("checkbox").nth(number - 1)
 
     def click_checkbox(self, number):
         self.checkbox(number).check()
